@@ -1,0 +1,30 @@
+section.hero {
+    width: 100%;
+    height: 75hv;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../../images/hero2.jpg') no-repeat center /cover;
+    border: 0.1px solid transparent;
+    color: var(--white);
+    box-sizing: border-box;
+}
+
+.hero article {
+    width: 50%;
+    margin: 10% 15% 15%;
+}
+
+.hero article h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.hero article h4 {
+    margin-bottom: 1.5rem;
+    /* font-size: 3rem; */
+}
+
+@media (width < 800px) {
+    .hero article {
+        width: 90%;
+        margin: 10% 5% 15%;
+    }
+}

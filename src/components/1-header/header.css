@@ -1,0 +1,148 @@
+/***************************
+    table of content
+****************************
+
+1- header design
+2- links & buttons
+3- modal (pop-up) 
+4- media-query
+
+*/
+
+
+/*************************
+    1- header design 
+*************************/
+
+
+header {
+    background-color: var(--white);
+    padding: 0 15%;
+    justify-content: space-between;
+    box-shadow: 1px 1px 10px #aaa;
+    margin-top: 2px;
+}
+
+header img {
+    width: 10rem;
+    height: 7rem;
+}
+
+/*************************
+    2- links & buttons
+*************************/
+
+header button.menu {
+    display: none;
+}
+
+header ul.flex {
+    gap: 32px;
+}
+
+header li a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+header li a:hover {
+    font-size: 1.3rem;
+    font-weight: bold;
+    opacity: 1;
+    /* border-bottom: 2px solid var(--green); */
+    color: var(--green);
+
+}
+
+header button.icon-menu {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+header button.icon-menu:hover {
+    color: var(--green);
+}
+
+/*************************
+    3- modal (pop-up) 
+*************************/
+
+header .fixed {
+    position: fixed;
+    background-color: rgba(40, 40, 40, 0.8);
+    inset: 0;
+    z-index: 10;
+}
+
+header .fixed ul.modal {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    background-color: var(--white);
+    padding: 1rem 2rem;
+}
+
+header .fixed ul.modal li {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+    text-align: right;
+}
+
+header .fixed ul.modal li:last-child {
+    border: none;
+}
+
+header .fixed ul.modal li:first-child {
+    text-align: left;
+    border: none;
+    margin-bottom: -1rem;
+}
+
+header button.icon-times {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+header button.icon-times:hover {
+    rotate: 180deg;
+    color: var(--green);
+
+}
+
+
+/***************************************
+    4- responisve design (media-query)
+*****************************************/
+
+@media (width < 800px) {
+    header {
+        padding: 0 10%;
+    }
+}
+
+@media (width < 700px) {
+    header {
+        padding: 0 5%;
+    }
+}
+
+
+@media (max-width : 620px) {
+    header nav {
+        display: none;
+    }
+
+    header button.menu {
+        display: block;
+    }
+
+    header img {
+
+        width: 9rem;
+        height: 6rem;
+    }
+}
