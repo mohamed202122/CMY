@@ -1,0 +1,34 @@
+footer {
+    box-sizing: border-box;
+    padding: 10px 10%;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+
+
+
+footer section.about {
+    width: 33%;
+}
+
+footer h3 {
+    text-align: right;
+    font-size: 1rem;
+    margin-bottom: .7rem;
+}
+
+footer .about p {
+    text-align: right;
+    font-size: 1rem;
+}
+
+footer section.cate {
+    width: 33%;
+}
+
+footer .cate ul li {
+    direction: rtl;
+    text-align: right;
+    margin: 0 15px;
+    list-style-type: initial;
+}

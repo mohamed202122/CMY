@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?26xj1t');
-  src:  url('fonts/icomoon.eot?26xj1t#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?26xj1t') format('truetype'),
-    url('fonts/icomoon.woff?26xj1t') format('woff'),
-    url('fonts/icomoon.svg?26xj1t#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?3lizsc');
+  src:  url('fonts/icomoon.eot?3lizsc#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3lizsc') format('truetype'),
+    url('fonts/icomoon.woff?3lizsc') format('woff'),
+    url('fonts/icomoon.svg?3lizsc#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,15 +25,41 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-menu:before {
+.icon-visa:before {
+  content: "\e904";
+  color: #142787;
+}
+.icon-vodafone:before {
   content: "\e900";
+  color: #e60000;
+}
+.icon-cc-mastercard:before {
+  content: "\e905";
 }
 .icon-close:before {
-  content: "\f00d";
+  content: "\e901";
 }
 .icon-remove:before {
-  content: "\f00d";
+  content: "\e901";
 }
 .icon-times:before {
-  content: "\f00d";
+  content: "\e901";
+}
+.icon-menu:before {
+  content: "\e902";
+}
+.icon-menu1:before {
+  content: "\e903";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-telegram:before {
+  content: "\ea95";
 }

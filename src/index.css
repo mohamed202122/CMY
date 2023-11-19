@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700');
 
 * {
   margin: 0;
@@ -8,7 +7,7 @@
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Amiri', serif;
   letter-spacing: 0.1rem;
 }
 

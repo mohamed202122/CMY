@@ -3,8 +3,9 @@ import "./product.css";
 
 export default function Product(props) {
   return (
-    <div className="Product border">
-      <h1>product</h1>
+    <div className="Product">
+      <img src={props.imageURL} alt="image" />
+      <p>{props.title}</p>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import "./hero.css";
 export default function Hero() {
   return (
     <section className="hero">
+      <button className="icon-whatsapp" />
       <div className="container">
         <article>
           <h1>We are CMY</h1>
