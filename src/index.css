@@ -12,15 +12,16 @@ html {
 }
 
 :root {
-
   --primary: #e7e7e7;
   --white: #fff;
+  --black: #111;
   --green: rgb(7, 119, 59);
+  --itemWidth: 350px;
+  --itemHight: 350px;
 }
 
 body {
-  background-color: var(--primary);
-  color: #000;
+  background-color: #333;
 }
 
 li {
@@ -48,4 +49,9 @@ button:active {
 
 .border {
   border: 1px solid red;
+}
+
+p,
+H1 {
+  color: var(--white);
 }

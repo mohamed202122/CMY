@@ -14,3 +14,15 @@ div.AllProducts h1 {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+@media (width < 1400px) {
+    div.AllProducts {
+        width: 90%;
+    }
+}
+
+@media (width < 1180px) {
+    div.AllProducts {
+        width: 95%;
+    }
+}

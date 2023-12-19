@@ -5,8 +5,6 @@ footer {
     background-color: antiquewhite;
 }
 
-
-
 footer section.about {
     width: 33%;
 }
@@ -20,6 +18,7 @@ footer h3 {
 footer .about p {
     text-align: right;
     font-size: 1rem;
+    color: var(--black)
 }
 
 footer section.cate {

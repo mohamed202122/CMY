@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Image1 from "../../images/logo.jpg";
+import Image1 from "../../images/logo2.jpg";
 import "./header.css";
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
@@ -13,16 +13,16 @@ export default function Header() {
       <nav>
         <ul className="flex">
           <li>
-            <a href="/#">حول</a>
+            <a href="/#">Home</a>
           </li>
           <li>
-            <a href="/#">الاتصال</a>
+            <a href="/#">Services</a>
           </li>
           <li>
-            <a href="/#">الخدمات</a>
+            <a href="/#">About</a>
           </li>
           <li>
-            <a href="/#">الصفحه الرئيسيه</a>
+            <a href="/#">Contact</a>
           </li>
         </ul>
       </nav>
@@ -31,22 +31,16 @@ export default function Header() {
         <div className="fixed">
           <ul className="modal">
             <li>
-              <button
-                className="icon-times"
-                onClick={() => setShowModal(false)}
-              />
+              <a href="/#">Home</a>
             </li>
             <li>
-              <a href="/#">حول</a>
+              <a href="/#">Services</a>
             </li>
             <li>
-              <a href="/#">الاتصال</a>
+              <a href="/#">About</a>
             </li>
             <li>
-              <a href="/#">الخدمات</a>
-            </li>
-            <li>
-              <a href="/#">الصفحه الرئيسيه</a>
+              <a href="/#">Contact</a>
             </li>
           </ul>
         </div>

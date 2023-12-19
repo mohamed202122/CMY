@@ -2,9 +2,15 @@ import React from "react";
 import "./hero.css";
 
 export default function Hero() {
+  // const teleUrl = "https://web.telegram.org/a/#5280807201";
+  // const url2 = "https://wa.me/+201060412714";
+  const url = "https://api.whatsapp.com/send?phone=201060412714";
+  const openWhats = () => {
+    window.open(url);
+  };
   return (
     <section className="hero">
-      <button className="icon-whatsapp" />
+      <button className="icon-whatsapp" onClick={openWhats} />
       <div className="container">
         <article>
           <h1>We are CMY</h1>
