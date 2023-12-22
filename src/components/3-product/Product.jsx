@@ -4,7 +4,7 @@ import "./product.css";
 export default function Product(props) {
   return (
     <div className="Product">
-      <img src={props.imageURL} alt="image" />
+      <img src={props.imageURL} alt={props.title} />
       <p className="title">{props.title}</p>
       <p className="desc">{props.desc}</p>
     </div>

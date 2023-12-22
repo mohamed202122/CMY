@@ -1,26 +1,15 @@
 section.hero {
     width: 100%;
-    height: 75hv;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../../images/hero.jpg') no-repeat left /cover;
-
+    height: 500px;
     border: 0.1px solid transparent;
     color: var(--white);
     box-sizing: border-box;
+    /* margin: 10px 0 ; */
 }
 
-.hero article {
-    width: 50%;
-    margin: 10% 15% 15%;
-}
-
-.hero article h1 {
-    margin-bottom: 2rem;
-    font-size: 3rem;
-}
-
-.hero article h4 {
-    margin-bottom: 1.5rem;
-    /* font-size: 3rem; */
+.hero img {
+    width: 100%;
+    height: 500px;
 }
 
 .hero button.icon-whatsapp {
@@ -35,9 +24,50 @@ section.hero {
     border-radius: 50%;
 }
 
+.hero button.icon-telegram {
+    position: fixed;
+    bottom: 10%;
+    left: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0.7rem;
+    color: var(--white);
+    background-color: #30ABEC;
+    border-radius: 50%;
+    bottom: 20%;
+}
+
+
 @media (width < 800px) {
-    .hero article {
-        width: 90%;
-        margin: 10% 5% 15%;
+    .hero img {
+        height: 400px;
     }
+
+    section.hero {
+        height: 400px;
+    }
+
+}
+
+
+@media (width < 700px) {
+    .hero img {
+        height: 300px;
+    }
+
+    section.hero {
+        height: 300px;
+    }
+
+}
+
+@media (width < 500px) {
+    .hero img {
+        height: 200px;
+    }
+
+    section.hero {
+        height: 200px;
+    }
+
 }

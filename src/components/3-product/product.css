@@ -4,14 +4,23 @@ div.Product {
     border-width: 1px;
     border-radius: 20px;
     border-color: "#f7eceb";
-    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
     width: 45%;
     height: 550px;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
+
 div.Product:hover {
-    rotate: 3deg;
+    rotate: 2deg;
+}
+
+.Product:hover p.title {
+    color: aqua;
+}
+
+.Product:hover p.desc {
+    font-size: 0.9rem;
 }
 
 .Product img {
@@ -27,6 +36,7 @@ div.Product:hover {
     padding: 1rem;
     padding-bottom: 0;
     line-height: 2rem;
+    transition: color 0.4s;
 }
 
 .Product p.desc {
@@ -35,6 +45,7 @@ div.Product:hover {
     font-weight: bold;
     padding: 1rem;
     margin: 1rem 0;
+    transition: color 0.4s;
 }
 
 @media (width < 950px) {
