@@ -1,10 +1,29 @@
-import React, { useState } from "react";
-import Image1 from "../../images/logo2.jpg";
+import React, { useEffect, useState } from "react";
+import Image1 from "../../images/logo.png";
 import "./header.css";
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Close the modal if it is open and the window width is greater than a certain threshold
+      if (showModal && window.innerWidth >= 660) {
+        setShowModal(false);
+      }
+    };
+
+    // Attach the event listener when the component mounts
+    window.addEventListener("resize", handleResize);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [showModal]);
+
+  // console.log(window.innerWidth);
   return (
-    <header className="flex ">
+    <header className="flex">
       <a className="image" href="/#">
         <img src={Image1} alt="logo" />
       </a>
@@ -13,16 +32,16 @@ export default function Header() {
       <nav>
         <ul className="flex">
           <li>
-            <a href="/#">Home</a>
+            <a href="/#">حول</a>
           </li>
           <li>
-            <a href="/#">Services</a>
+            <a href="/#">الاتصال</a>
           </li>
           <li>
-            <a href="/#">About</a>
+            <a href="/#">الخدمات</a>
           </li>
           <li>
-            <a href="/#">Contact</a>
+            <a href="/#">الصفحه الرئيسيه</a>
           </li>
         </ul>
       </nav>
@@ -31,16 +50,22 @@ export default function Header() {
         <div className="fixed">
           <ul className="modal">
             <li>
-              <a href="/#">Home</a>
+              <button
+                className="icon-times"
+                onClick={() => setShowModal(false)}
+              />
             </li>
             <li>
-              <a href="/#">Services</a>
+              <a href="/#">حول</a>
             </li>
             <li>
-              <a href="/#">About</a>
+              <a href="/#">الاتصال</a>
             </li>
             <li>
-              <a href="/#">Contact</a>
+              <a href="/#">الخدمات</a>
+            </li>
+            <li>
+              <a href="/#">الصفحه الرئيسيه</a>
             </li>
           </ul>
         </div>
